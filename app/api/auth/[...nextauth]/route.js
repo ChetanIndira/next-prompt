@@ -33,7 +33,6 @@ const handler = NextAuth({
       try {
         await connectToDB();
         const userExist = await User.findOne({ email: profile.email });
-        console.log("user Exist => ", userExist);
         if (!userExist) {
           await User.create({
             email: profile.email,
@@ -43,7 +42,6 @@ const handler = NextAuth({
         }
         return true;
       } catch (error) {
-        console.log(error);
         return false;
       }
     },
