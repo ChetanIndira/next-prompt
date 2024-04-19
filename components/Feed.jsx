@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import PromptCard from "./promptCard";
+import PromptCard from "./PromptCard";
 import { handleClientScriptLoad } from "next/script";
 
 const PromptCardList = ({ data, handleTagClick }) => {
