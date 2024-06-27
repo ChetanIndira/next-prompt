@@ -1,8 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import PromptCard from "./promptCard";
-import { handleClientScriptLoad } from "next/script";
+import PromptCard from "./PromptCard.jsx";
 
 const PromptCardList = ({ data, handleTagClick }) => {
   return (
@@ -11,7 +10,7 @@ const PromptCardList = ({ data, handleTagClick }) => {
         <PromptCard
           key={post._id}
           post={post}
-          handleTagClick={handleTagClick}
+          handleTagClick={handleTagClick} 
         />
       ))}
     </div>

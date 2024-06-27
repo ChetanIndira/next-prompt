@@ -1,5 +1,5 @@
 import React from "react";
-import PromptCard from "./promptCard";
+import PromptCard from "./PromptCard.jsx";
 
 const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
     
